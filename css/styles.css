@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Overpass;
+    src: url('../fonts/Overpass/Overpass-VariableFont_wght.ttf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--Very-Dark-Blue, #131518);
+}
+
+.rating-state-box{
+    min-height: 350px;
+    max-width: 412px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
+    display: block;
+    margin: 180px auto 100px auto;
+}
+
+.rating-inner-container{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    width: calc(100% - 2 * 32px);
+    height: calc(100% - 2 * 32px);
+}
+
+.rating-inner-container .star{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Blue, #242d38);
+}
+
+.rating-inner-container h4{
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Heading (Large) */
+    font-family: Overpass;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 30px 0 0 0;
+}
+
+.rating-inner-container p{
+    color: var(--Light-Grey, #969FAD);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Body */
+    font-family: Overpass;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400; 
+    line-height: 24px; /* 160% */
+    margin: 7px 0 0 0;
+}
+
+.rating-inner-container .stars-nbr{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+
+}
+
+.rating-inner-container .stars-nbr div{
+    color: var(--Medium-Gray, #7C8798);
+    background-color: #242d38;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* Rating */
+    font-family: Overpass;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.2px;
+    width: 51px;
+    height: 51px;
+    border-radius: 100%;
+}
+
+.rating-inner-container .stars-nbr div:hover{
+    color:  #FFF;
+    background-color: #FC7614;
+    cursor: pointer;
+}
+
+
+
+.rating-inner-container button{
+    width: 100%;
+    height: 45px;
+    flex-shrink: 0;
+    margin-top: 32px;
+    border-radius: 22.5px;
+    background: var(--Orange, #FC7614);
+    border: 0;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Heading (Medium) */
+    font-family: Overpass;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.rating-inner-container button:hover{
+    color: var(--Orange, #FC7614);
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+.rating-inner-container .stars-nbr .stars-nbr-selected{
+    background-color: #7C8798;
+    color: var(--Pure-White, #FFF);
+}
+
+.thankyou-inner-container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    width: calc(100% - 2 * 32px);
+    height: calc(100% - 2 * 32px);
+
+}
+
+.thankyou-inner-container img{
+    margin-top: calc(45px - 32px);
+}
+
+.thankyou-inner-container .selection{
+    color: #FC7614;
+    text-align: center;
+    font-family: Overpass;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 160% */
+    margin-top: 36px;
+    background-color: #242d38;
+    padding: 4px 19px;
+    border-radius: 22.5px;
+}
+
+.thankyou-inner-container .thankyou{
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Heading (Large) */
+    font-family: Overpass;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 32px;
+}
+.thankyou-inner-container p {
+    color: var(--Light-Grey, #969FAD);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Body */
+    font-family: Overpass;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+    margin: 7px 0 0 0;
+}
